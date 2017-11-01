@@ -31,7 +31,6 @@ var Review = mongoose.model('Review', {
 });
 
 // Routes
-require('./src/routes/home')(app);
 
 
 // listen (start app with node server.js) ======================================
