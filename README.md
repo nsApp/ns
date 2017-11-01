@@ -10,7 +10,7 @@ A read it later application.
 3. Install [nvm](http://dev.topheman.com/install-nvm-with-homebrew-to-use-multiple-versions-of-node-and-iojs-easily/)
 4. Install node version v8.9.0 \
 ```nvm install v8.9.0```
-5. Install [Ionic](https://ionicframework.com/docs/intro/installation/)
+5. Install [Ionic 3](https://ionicframework.com/docs/intro/installation/)
 6. Install [mongoDb](https://www.mongodb.com/)
 7. Clone and `cd` into the `ns` repository \
 `git clone git@github.com:natshell/ns.git` \
