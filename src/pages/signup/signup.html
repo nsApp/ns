@@ -1,18 +1,34 @@
-<!--
-  Generated template for the SignupPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
-
-  <ion-navbar>
-    <ion-title>signup</ion-title>
-  </ion-navbar>
-
-</ion-header>
-
-
 <ion-content padding>
+  <ion-buttons end>
+    <button (click)="welcome()">
+      <ion-icon name="close" class="close-icon"></ion-icon>
+    </button>
+  </ion-buttons>
 
+  <h3 class="title">Natshell</h3>
+
+  <ion-list class="marginTop">
+    <ion-item>
+      <ion-input type="name" placeholder="Full Name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="email" placeholder="Email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="password" placeholder="Password"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <button ion-button block color="primary" (click)="login()">Sign Up</button>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <p>
+      Already have an account?
+      <a>Log In.</a>
+    </p>
+  </ion-toolbar>
+</ion-footer>

@@ -1,3 +1,33 @@
 page-login {
+  ion-img {
+    height: 70vh;
+    width: auto;
+    margin: 5% auto;
+    display: block;
+  }
 
+  p {
+    text-align: center;
+  }
+
+  .close-icon {
+    font-size: 3.2em;
+    color: #2d2d2d;
+    //margin-left: ;
+  }
+
+  .marginTop {
+    margin-top: 5%;
+  }
+
+  .plain {
+    border-color: transparent;
+  }
+
+  .title {
+    text-align: center;
+    font-family: Chalkboard;
+    font-size: 40px;
+    margin-top: 20%;
+  }
 }
