@@ -1,0 +1,36 @@
+<ion-content padding>
+  <ion-buttons end>
+    <button (click)="welcome()">
+      <ion-icon name="close" class="close-icon"></ion-icon>
+    </button>
+  </ion-buttons>
+
+  <ion-img width="180" height="180" src="assets/img/natshell.png"></ion-img>
+
+  <ion-list class="marginTop">
+    <ion-item>
+      <ion-input type="username" placeholder="Username"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="password" placeholder="Password"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <button ion-button block color="primary" (click)="login()">Log In</button>
+
+  <p>Forget your login details?
+    <a>Get help signing in.</a>
+  </p>
+
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <p>
+      Don't have an account?
+      <a href="">Sign Up.</a>
+    </p>
+  </ion-toolbar>
+</ion-footer>
