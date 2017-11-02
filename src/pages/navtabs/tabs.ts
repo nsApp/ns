@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
-import { AboutPage } from '../about/about';
-import { ContactPage } from '../contact/contact';
+import { AboutPage } from '../category/category';
+import { TagPage } from '../tag/tag';
 import { HomePage } from '../home/home';
 
 @Component({
@@ -11,7 +11,7 @@ export class NavTabsPage {
 
   tab1Root = HomePage;
   tab2Root = AboutPage;
-  tab3Root = ContactPage;
+  tab3Root = TagPage;
 
   constructor() {
 
