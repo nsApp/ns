@@ -7,7 +7,7 @@ import { HomePage } from '../home/home';
 @Component({
   templateUrl: 'tabs.html'
 })
-export class TabsPage {
+export class NavTabsPage {
 
   tab1Root = HomePage;
   tab2Root = AboutPage;
