@@ -1,5 +1,18 @@
 page-welcome {
   #welcome {
     background: color($colors, plain);
+
+    ion-img {
+      height: 70vh;
+      width: auto;
+      margin: 40% auto;
+      display: block;
+    }
+
+    .marginTop {
+      margin-top: 50%;
+    }
    }
+
+
 }
