@@ -5,7 +5,6 @@ node_js:
   - "8"
 
 before_install:
-  - export LANG=en_US.UTF-8
   - npm install -g npm@2.14.5
   - npm install -g grunt-cli cordova ionic
 
@@ -14,17 +13,6 @@ services:
 
 script:
   - npm install
-  - ionic platform add ios
-  - ionic plugin add cordova-plugin-app-version
-  - ionic plugin add cordova-plugin-network-information
-  - ionic plugin add ionic-plugin-keyboard
-  - ionic plugin add cordova-plugin-x-toast
-  - ionic plugin add phonegap-plugin-push
-  - ionic build ios --device --release
-  - ionic build ios --device --release
-
-after_success:
-- ./scripts/package-and-upload.sh
 
 cache:
   directories:
