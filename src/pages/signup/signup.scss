@@ -14,8 +14,10 @@ page-signup {
 
   .title {
     text-align: center;
-    font-family: Chalkboard;
+    color: color($colors, primary);
+    font-family: "Helvetica Neue";
     font-size: 40px;
+    font-weight: 200;
     margin-top: 20%;
   }
 }
