@@ -6,13 +6,14 @@ node_js:
 
 before_install:
   - npm install -g npm@2.14.5
-  - npm install -g grunt-cli cordova ionic
+  - npm install -g ionic cordova
+  - npm install
 
 services:
   - mongodb
 
 script:
-  - npm install
+  - ionic coredova build ios
 
 cache:
   directories:
