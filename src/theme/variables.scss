@@ -47,6 +47,12 @@ $colors: (
 // --------------------------------------------------
 // iOS only Sass variables can go here
 
+// Searchbar
+$searchbar-ios-background-color: rgba(0, 0, 0, 0);
+$searchbar-ios-input-background-color: rgba(119, 120, 125, 0.1);
+$searchbar-ios-input-clear-icon-color: #696969;
+$searchbar-ios-input-search-icon-color: color($colors, primary);
+
 
 
 
