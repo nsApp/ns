@@ -5,7 +5,7 @@ import { NavController } from 'ionic-angular';
   selector: 'page-category',
   templateUrl: 'category.html'
 })
-export class AboutPage {
+export class CategoryPage {
 
   constructor(public navCtrl: NavController) {
 
