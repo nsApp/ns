@@ -1,17 +1,23 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-buttons start menuToggle>
+      <button ion-button>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>
+      Home
+    </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
   <ion-searchbar ></ion-searchbar>
-  <ion-card *ngFor="let article of articleCollection">
-    <ion-card-header text-wrap>
-      <h2>{{ article.title }}</h2>
-    </ion-card-header>
-    <ion-card-content>
-      <p>{{ article.text }}</p>
-    </ion-card-content>
-  </ion-card>
+  <ion-list>
+    <ion-item *ngFor="let article of articleCollection">
+      <h2 text-wrap>{{ article.title }}</h2>
+      <i>{{ article.website }}</i>
+      <p text-wrap>{{ article.text }}</p>
+    </ion-item>
+  </ion-list>
 </ion-content>

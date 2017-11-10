@@ -8,9 +8,10 @@ import articles from "../../data/articles";
   selector: 'page-home',
   templateUrl: 'home.html'
 })
+
 export class HomePage implements OnInit {
   // the collections is an array
-  articleCollection: {id: string, title: string, text: string}[];
+  articleCollection: {id: string, title: string, text: string, website: string}[];
 
   ngOnInit() {
     this.articleCollection = articles;
