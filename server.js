@@ -23,10 +23,6 @@ app.use(cors());
 app.use(passport.initialize());
 
 // Route (GET http://localhost:8080)
-// app.get('/', function(req, res) {
-//   res.send('Hello! The API is at http://localhost:' + port + '/api');
-// });
-
 app.get('/welcome', function (req,res) {
   res.sendFile(__dirname + '/src/pages/welcome/welcome.html');
 });
@@ -35,6 +31,21 @@ app.get('/signup', function (req,res) {
   res.sendFile(__dirname + '/src/pages/signup/signup.html')
 });
 
+app.get('/login', function (req, res) {
+  res.sendFile(__dirname + '/src/pages/login/login.html')
+});
+
+app.get('/', function (req, res) {
+  res.sendFile(__dirname + '/src/pages/home/home.html')
+});
+
+app.get('/category', function (req, res) {
+  res.sendFile(__dirname + '/src/pages/category/category.html')
+});
+
+app.get('/tag', function (req, res) {
+  res.sendFile(__dirname + '/src/pages/tag/tag.html')
+});
 
 // listen (start app with node server.js) ======================================
 app.listen(port);
